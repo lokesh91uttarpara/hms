@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Guest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="Details">ADD YOUR DETAILS HERE</h1>
+  <div class="form-container">
+    <form method="post" action="/add-guest">
+      <div>NAME<div><input type="text" name="full_name" placeholder="Full Name" required></div>
+
+        <div>EMAIL<input type="email" name="email" placeholder="Email" required></div>
+
+        <div>PHONE NO:<input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}"
+            title="Enter a 10-digit number"></div>
+
+        <div>SELECT YOUR GENDER<select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select></div>
+
+        <div>SELECT YOUR ID <select name="id_type" required>
+            <option value="">Select ID Proof</option>
+            <option value="Aadhar">Aadhar</option>
+            <option value="Passport">Passport</option>
+            <option value="Driving License">Driving License</option>
+            <option value="Voter ID">Voter ID</option>
+          </select></div>
+
+        <div>PROVIDE YOUR ID NO:<input type="text" name="id_number" placeholder="ID Number" required></div>
+
+        <div>ADDRESS<textarea name="address" placeholder="Address" rows="3" required></textarea></div>
+
+        <label for="checkin_date" style="display:block; margin-top: 10px;">Check-In Date:</label>
+        <input type="date" name="checkin_date" required>
+      </div>
+
+      <div> <button type="submit" style="margin-top: 10px;">Submit</button></div>
+      <div> <button type="reset" style="margin-top: 10px;">Reset</button></div>
+    </form>
+  </div>
+
+</body>
+
+</html>

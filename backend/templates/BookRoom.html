@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Book Room</h2>
+        <form action="/book_room" method="POST">
+            <div>Guest ID<div><input type="text" name="Guest ID" placeholder="Provide Your Guest ID" required></div>
+            <div>Guest Name<div><input type="text" name="Guest ID" placeholder="Provide Your Guest Name" required></div>
+            <label for="room_number">Room Number:</label>
+            <input type="text" id="room_number" name="room_number" placeholder="Provide Your Room Number" required>
+            <label for="check_in">Check-In Date:</label>
+            <input type="date" id="check_in" name="check_in" required>
+            
+            
+            <label for="check_out">Check-Out Date:</label>
+            <input type="date" id="check_out" name="check_out" required>
+             <label for="total_amount">Total_amount(₹):</label>
+            <input type="number" id="total_amount" name="total_amount" min="0" required>
+            <div> <button type="submit" style="margin-top: 10px;">Submit</button></div>
+
+        </form>
+    </div>
+</body>
+
+</html>
