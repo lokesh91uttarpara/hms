@@ -1,0 +1,44 @@
+# Ignore virtual environment
+backend/venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+
+# Ignore environment variable files
+.env
+
+.env.*
+
+# Ignore logs
+*.log
+
+# Ignore test coverage reports
+htmlcov/
+.coverage
+
+# Ignore database files (optional)
+*.sqlite3
+
+# Ignore compiled files
+*.so
+*.egg
+*.egg-info/
+
+# Ignore node_modules if frontend code exists
+node_modules/
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# System files
+.DS_Store
+Thumbs.db
