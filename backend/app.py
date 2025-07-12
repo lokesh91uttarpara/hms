@@ -173,12 +173,6 @@ def clean_rooms():
 def public_info():
     return jsonify({"message": "This is public hotel info"})
 
-
-
-
-
-
-
 @app.route('/')
 def index():
         """Home page"""
@@ -186,7 +180,6 @@ def index():
             'message': 'Hotel Management System API',
          
         })
-
 
 app.register_blueprint(booking_bp, url_prefix='/booking')
 app.register_blueprint(adding_guest, url_prefix='/addguests')
