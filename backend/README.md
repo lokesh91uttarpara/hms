@@ -1,1 +1,0 @@
-# This is realworld project on Hotel Management ERP
