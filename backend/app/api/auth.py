@@ -20,4 +20,4 @@ def login(form: LoginRequest):
         raise HTTPException(status_code=401, detail="Invalid username or password")
 
     token = create_access_token({"sub": user["user_id"]})
-    return {"access_token": token, "token_type": "bearer","user_id" : user_id,"user_type" : user_type }
+    return {"status": 1,"access_token": token, "token_type": "bearer","user_id" : user_id,"user_type" : user_type }
